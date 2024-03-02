@@ -3,7 +3,9 @@ npm run dev
 # correc en cmd
 mongod
 
-# instalacion
+# Backend
+
+### instalacion
 npm init -y
 npm i express
 npm i nodemon -D
@@ -37,7 +39,7 @@ CLIENTE
 
 middlewares:si el usuario esta autenticado puede pasar si no no puede pasar
 
-# Validaciones
+### Validaciones
 https://www.npmjs.com/package/zod
  Con zod indicamos el tipo de dato
 -npm i zod
@@ -49,3 +51,5 @@ En la carpeta schemas agregamos validaciones
 npm create vite (react y js)
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
+Instalar reac rouuter: npm install react-router-dom
+
