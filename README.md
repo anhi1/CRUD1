@@ -1,3 +1,9 @@
+# ejecutar
+npm run dev
+# correc en cmd
+mongod
+
+# instalacion
 npm init -y
 npm i express
 npm i nodemon -D
@@ -30,3 +36,10 @@ CLIENTE
 -npm install react-hook-form
 
 middlewares:si el usuario esta autenticado puede pasar si no no puede pasar
+
+# Validaciones
+https://www.npmjs.com/package/zod
+ Con zod indicamos el tipo de dato
+-npm i zod
+
+En la carpeta schemas agregamos validaciones
