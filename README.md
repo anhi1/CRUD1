@@ -1,4 +1,4 @@
-# ejecutar
+# ejecutar para frontend y backend
 npm run dev
 # correc en cmd
 mongod
@@ -43,3 +43,9 @@ https://www.npmjs.com/package/zod
 -npm i zod
 
 En la carpeta schemas agregamos validaciones
+
+# Cliente
+
+npm create vite (react y js)
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
