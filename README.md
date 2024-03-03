@@ -30,26 +30,24 @@ CRUD
 VALIDACIONES DE DATOS
 -npm i zod (modulo)
 
-CLIENTE
--npm create vite
--npm install -D tailwindcss postcss autoprefixer
--npx tailwindcss init -p
--npm i react-router-dom
--npm install react-hook-form
 
-middlewares:si el usuario esta autenticado puede pasar si no no puede pasar
+
 
 ### Validaciones
 https://www.npmjs.com/package/zod
  Con zod indicamos el tipo de dato
 -npm i zod
-
 En la carpeta schemas agregamos validaciones
+
+### cors
+npm i cors
 
 # Cliente
 
 npm create vite (react y js)
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
-Instalar reac rouuter: npm install react-router-dom
-
+Instalar react router: npm install react-router-dom
+Instalar form: npm install react-hook-form
+Instalar axios(engloba fecth): npm i axios
+middlewares:si el usuario esta autenticado puede pasar si no no puede pasar
