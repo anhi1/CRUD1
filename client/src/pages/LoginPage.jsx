@@ -8,7 +8,7 @@ function LoginPage() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const {signin, errors: signinErrors}= useAuth();
+  const {signin, errors: signinErrors} = useAuth();
   const onSubmit = handleSubmit((data) => {
     signin(data);
   });
