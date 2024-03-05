@@ -46,6 +46,12 @@ export const AuthProvider = ({ children }) => {// emgloba a otros
     }
   };
 
+  const logout = () =>{
+    Cookies.remove("token");
+    setIsAuthenticated(false);
+    setUser(null);
+  }
+
   useEffect(() => {
     if (errors.length > 0) {
       const timer = setTimeout(() => {
@@ -91,6 +97,7 @@ export const AuthProvider = ({ children }) => {// emgloba a otros
       value={{
         signup,
         signin,
+        logout,
         user,
         isAuthenticated,
         errors,
