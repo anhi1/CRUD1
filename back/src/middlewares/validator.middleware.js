@@ -8,3 +8,5 @@ export const validateSchema = (schema) => (req, res, next) => {
       .json(error.errors.map((error) => error.message));
   }
 };
+
+//parser: analizar o interpretar datos 

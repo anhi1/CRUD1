@@ -1,10 +1,9 @@
 import axios from 'axios'
 
-//cuale es el domio axios
-
 const instance = axios.create({
-    baseURL: 'http://localhost:4000/api',
-    withCredentials: true // le establesca la cookies
+    baseURL: 'http://localhost:4000/api',// enviar solicitudes HTTP al servidor
+    withCredentials: true // Habilita el intercambio de cookies entre el frontend y el backend.
 })
 
 export default instance
+

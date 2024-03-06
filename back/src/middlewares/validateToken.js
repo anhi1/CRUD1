@@ -16,3 +16,5 @@ export const authRequired = (req, res, next) => {// para que sea un middleware d
 // {token} del cookie ya se q va ha venir un token
 // pero si hay un token voy a verificarlo, tengo q saber si un token que genere
 //TOKEN_SECRET es una única clave secreta utilizada para firmar y verificar los tokens JWT en una aplicación o sistema
+//método verify de la biblioteca jsonwebtoken
+// Si la verificación del token es exitosa y no hay errores, el contenido decodificado del token se asigna al objeto user, que luego se adjunta al objeto de solicitud req. Esto permite que la información del usuario autenticado esté disponible en las rutas posteriores de la aplicación.

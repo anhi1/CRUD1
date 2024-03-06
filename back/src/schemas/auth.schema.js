@@ -1,6 +1,8 @@
 import { z } from "zod";
 
 //validar login y register
+// "zod": es una biblioteca de validación de esquemas
+
 export const registerSchema = z.object({
   username: z.string({
     required_error: "Username is required",
