@@ -6,7 +6,7 @@ function Navbar() {
   console.log(user);
   return (
     <nav className="bg-zinc-200 flex justify-between py-5 px-10">
-      <Link to="/">
+      <Link to= {isAuthenticated? "/tasks":"/"}>
         <h1 className="text-2xl font-bold">Tasks manager</h1>
       </Link>
 

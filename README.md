@@ -52,3 +52,4 @@ Instalar form: npm install react-hook-form
 Instalar axios(engloba fecth): npm i axios
 middlewares:si el usuario esta autenticado puede pasar si no no puede pasar
 leer las cookies del front: npm i js-cookie 
+npm install dayjs

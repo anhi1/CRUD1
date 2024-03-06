@@ -22,6 +22,7 @@ function RegisterPage() {
   });
 
   return (
+    <div className="flex h-[calc(100vh-100px)] items-center justify-center">
     <div className="bg-zinc-500 max-w-md p-10 rounded-md">
       {registerErrors.map((error, i) => (
         <div className="bg-red-500 p-2 text-white" key={i}>
@@ -29,6 +30,7 @@ function RegisterPage() {
         </div>
       ))}
       <form onSubmit={onSubmit}>
+      <h1 className="text-2xl font-bold">Register</h1>
         <input
           type="text"
           {...register("username", { required: true })}
@@ -56,7 +58,7 @@ function RegisterPage() {
         {errors.password && (
           <p className="text-red-500">password is required</p>
         )}
-        <button type="submit">Register</button>
+        <button type="submit" className="bg-sky-500 text-white px-4 rounded-md my-2">Register</button>
       </form>
 
       <p className="flex gap-x-2 justify-between">
@@ -65,6 +67,7 @@ function RegisterPage() {
           Login
         </Link>
       </p>
+    </div>
     </div>
   );
 }
