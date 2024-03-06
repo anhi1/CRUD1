@@ -1,55 +1,47 @@
-# ejecutar para frontend y backend
+# Stack MERN
+### Ejecutar front-end y back-end
 npm run dev
-# correc en cmd
-mongod
+
+# Correr en cmd
+- mongod
 
 # Backend
 
-### instalacion
-npm init -y
-npm i express
-npm i nodemon -D
-npm i morgan
-npm install mongoose (valida los datos)
+### comandos
 
-ENCRIPTAR UNA CONTRASEÑA Y GENERAN UN TOKEN
--creacion del token
-npm i bcryptjs
+- npm init -y
+- npm i express
+- npm i nodemon -D
+- npm i morgan
+- npm install mongoose (validar los datos)
 
--Dar un pase(token) (jwt)
-npm i jsonwebtoken
+### ENCRIPTAR UNA CONTRASEÑA Y GENERAN UN TOKEN
+- npm i bcryptjs
+- npm i jsonwebtoken
 
 
-CRUD
--defino las rutas
--creo las funciones que estan en controller.js
--estas funciones() las import en tasks.routes.js
--defino el modelo task
--import el modelo en task.controller.js
+### CRUD
+1. Defino las rutas
+2. creo las funciones que estan en controller.js
+3. Estas funciones() las import en tasks.routes.js
+4. Defino el modelo task
+5.import el modelo en task.controller.js
 
-VALIDACIONES DE DATOS
--npm i zod (modulo)
-
-
-
-
-### Validaciones
+### VALIDACIONES DE DATOS
 https://www.npmjs.com/package/zod
- Con zod indicamos el tipo de dato
--npm i zod
-En la carpeta schemas agregamos validaciones
+- npm i zod (modulo)
+ Con zod indicamos el tipo de dato, en la carpeta schemas agregamos validaciones
 
-### cors
-npm i cors
+### CORS
+- npm i cors
 
 # Cliente
 
-npm create vite (react y js)
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
-Instalar react router: npm install react-router-dom
-Instalar form: npm install react-hook-form
-Instalar axios(engloba fecth): npm i axios
-middlewares:si el usuario esta autenticado puede pasar si no no puede pasar
-leer las cookies del front: npm i js-cookie 
-npm install dayjs
+- npm create vite (react y js)
+- npm install -D tailwindcss postcss autoprefixer
+- npx tailwindcss init -p
+- npm install react-router-dom
+- npm install react-hook-form
+- Instalar axios(engloba fecth): npm i axios
+- npm i js-cookie (leer las cookies del front)
+- npm install dayjs (fechas)
