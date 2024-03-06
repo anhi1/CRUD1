@@ -23,18 +23,18 @@ function RegisterPage() {
 
   return (
     <div className="flex h-[calc(100vh-100px)] items-center justify-center">
-    <div className="bg-zinc-500 max-w-md p-10 rounded-md">
+    <div className="w-full max-w-xs">
       {registerErrors.map((error, i) => (
         <div className="bg-red-500 p-2 text-white" key={i}>
           {error}
         </div>
       ))}
-      <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
       <h1 className="text-2xl font-bold">Register</h1>
         <input
           type="text"
           {...register("username", { required: true })}
-          className="w-full bg-zinc-600 text-white px-4 py-2 rounded-md my-2"
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline my-2"
           placeholder="username"
         />
         {errors.username && (
@@ -44,7 +44,7 @@ function RegisterPage() {
         <input
           type="email"
           {...register("email", { required: true })}
-          className="w-full bg-zinc-600 text-white px-4 py-2 rounded-md my-2"
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline my-2"
           placeholder="Email"
         />
         {errors.email && <p className="text-red-500">email is required</p>}
@@ -52,13 +52,13 @@ function RegisterPage() {
         <input
           type="password"
           {...register("password", { required: true })}
-          className="w-full bg-zinc-600 text-white px-4 py-2 rounded-md my-2"
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline my-2"
           placeholder="Password"
         />
         {errors.password && (
           <p className="text-red-500">password is required</p>
         )}
-        <button type="submit" className="bg-sky-500 text-white px-4 rounded-md my-2">Register</button>
+        <button type="submit" className="bg-indigo-500 hover:bg-indigo-300 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline my-2">Register</button>
       </form>
 
       <p className="flex gap-x-2 justify-between">
