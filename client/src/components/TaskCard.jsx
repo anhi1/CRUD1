@@ -4,7 +4,7 @@ import days from 'dayjs';
 import utc from 'dayjs/plugin/utc'
 days.extend(utc);
 
-function TaskCard({ task }) {
+function TaskCard({task}) {
   const { deleteTask } = useTasks();
   return (
     <div className="bg-white shadow rounded-lg max-w-md w-full p-10">
