@@ -45,3 +45,22 @@ https://www.npmjs.com/package/zod
 - Instalar axios(engloba fecth): npm i axios
 - npm i js-cookie (leer las cookies del front)
 - npm install dayjs (fechas)
+
+## DOCKER
+
+client
+
+npm run build
+docker init (poner el puerto)
+
+- se crea automaticamente el compose.yaml | README.Docker | .dockerignore | Dockerfile
+
+- agregar en el package.json 
+"preview": "vite preview --host"
+
+- Agregar en el Dokerfile :
+ENV NODE_ENV development
+COPY package*.json ./
+RUN npm install
+
+- Ejecutar: docker compose up --build
